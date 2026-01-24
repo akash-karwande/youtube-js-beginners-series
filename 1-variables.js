@@ -1,40 +1,38 @@
 // var vs let vs const 
-// scope
+// 1. scope
+
 // {
-//     const a = 2;
-// }
+// const a = 10;
 // console.log(a);
-// shadowing
-// var b = 10;
-
-// {
-//     let b = 20;
-//     // console.log(b);
 // }
 
-// console.log(b);
+// 2. shadowing
 
+// var x = 9;
+// {
+//     const x = 10;
+//     console.group(x);
+// }
+// 3. Declaration
+// var a = 12;
+// var x;
+// x = 10;
 
-// Declaration
-// var a;
-// a = 0;
-// let b;
-// b = 2;
-// const c = 12;
-// Reinitialization
-// var varVariable = 30;
-// varVariable = 50;
+// let w = 13;
+// let c;
+// c = 40;
 
-// let letVariable = 'Hi';
-// letVariable = 40;
+// const q = 12;
+// q = 20;
 
-// const constVar = 'URL';
+// 4. Hoisting
 
-// constVar = "12";
-// Hoisting
+console.log(a);
 
-console.log(y);
-var abc = 12;
+var a = 10;
 
-let x = 'Hi';
-const y = 20;
+console.log(x);
+console.log(z);
+
+let x = 90;
+const z = 100;
