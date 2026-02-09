@@ -38,6 +38,7 @@ function sendEmail() {
 }
 
 async function getAllUserData() {
+    console.time("start")
     try {
         let name = await getUser();
         let order = await getOrder();
@@ -46,6 +47,7 @@ async function getAllUserData() {
     } catch (error) {
         console.log(error);
     }
+    console.timeEnd("start");
 }
 
 console.log("before calling")
